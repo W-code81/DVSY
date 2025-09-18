@@ -215,31 +215,31 @@
         sidebar.style.display = "flex";
       }
 
-      const scrollBtn = document.createElement("button");
-      scrollBtn.innerHTML = "↑";
-      scrollBtn.style.position = "fixed";
-      scrollBtn.style.bottom = "20px";
-      scrollBtn.style.right = "40px";
-      scrollBtn.style.padding = "10px 15px";
-      scrollBtn.style.border = "none";
-      scrollBtn.style.borderRadius = "30px";
-      scrollBtn.style.backgroundColor = "#333";
-      scrollBtn.style.color = "#fff";
-      scrollBtn.style.cursor = "pointer";
-      scrollBtn.style.display = "none";
-      scrollBtn.style.zIndex = "1000";
-      document.body.appendChild(scrollBtn);
+      // const scrollBtn = document.createElement("button");
+      // scrollBtn.innerHTML = "↑";
+      // scrollBtn.style.position = "fixed";
+      // scrollBtn.style.bottom = "20px";
+      // scrollBtn.style.right = "40px";
+      // scrollBtn.style.padding = "10px 15px";
+      // scrollBtn.style.border = "none";
+      // scrollBtn.style.borderRadius = "30px";
+      // scrollBtn.style.backgroundColor = "#333";
+      // scrollBtn.style.color = "#fff";
+      // scrollBtn.style.cursor = "pointer";
+      // scrollBtn.style.display = "none";
+      // scrollBtn.style.zIndex = "1000";
+      // document.body.appendChild(scrollBtn);
 
-      window.addEventListener("scroll", () => {
-        scrollBtn.style.display = window.scrollY > 500 ? "block" : "none";
-      });
+      // window.addEventListener("scroll", () => {
+      //   scrollBtn.style.display = window.scrollY > 500 ? "block" : "none";
+      // });
 
-      scrollBtn.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
+      // scrollBtn.addEventListener("click", () => {
+      //   window.scrollTo({
+      //     top: 0,
+      //     behavior: "smooth",
+      //   });
+      // });
 
       // for the sidebar
       function showSideBar() {
