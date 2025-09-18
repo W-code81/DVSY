@@ -196,6 +196,101 @@
         sidebar.style.display = "flex";
       }
 
-    </script>
+      const scrollBtn = document.createElement("button");
+      scrollBtn.innerHTML = "↑";
+      scrollBtn.style.position = "fixed";
+      scrollBtn.style.bottom = "20px";
+      scrollBtn.style.right = "20px";
+      scrollBtn.style.padding = "10px 15px";
+      scrollBtn.style.border = "none";
+      scrollBtn.style.borderRadius = "30px";
+      scrollBtn.style.backgroundColor = "#333";
+      scrollBtn.style.color = "#fff";
+      scrollBtn.style.cursor = "pointer";
+      scrollBtn.style.display = "none";
+      scrollBtn.style.zIndex = "1000";
+      document.body.appendChild(scrollBtn);
+
+      window.addEventListener("scroll", () => {
+        scrollBtn.style.display = window.scrollY > 500 ? "block" : "none";
+      });
+
+      scrollBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      // for the sidebar
+      function showSideBar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function closeSideBar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+
+      // Scroll Reveal
+      ScrollReveal().reveal(".hero-text h1", {
+        origin: "bottom",
+        distance: "40px",
+        duration: 800,
+        easing: "ease-in-out",
+        opacity: 0,
+        reset : true,
+      });
+
+      ScrollReveal().reveal(".hero-text p",{
+        origin:"bottom",
+        distance:"30px",
+        duration:700,
+        easing:"ease-in-out",
+        delay:200,
+        opacity:0,
+        reset:true,
+      })
+
+      ScrollReveal().reveal(".cards", {
+        origin:"bottom",
+        distance:"40px",
+        duration:900,
+        easing:"ease-in-out",
+        opacity:0,
+        interval:300,
+        reset:true,
+      })
+
+      ScrollReveal().reveal(".about-left", {
+        origin:"left",
+        distance:"40px",
+        duration:900,
+        easing:"ease-in-out",
+        opacity:0,
+        reset:true,
+      })
+
+      ScrollReveal().reveal(".about-right", {
+        origin:"right",
+        distance:"40px",
+        duration:800,
+        easing:"ease-in-out",
+        opacity:0,
+        reset:true,
+      })
+
+      ScrollReveal().reveal(".advantages", {
+        origin:"bottom",
+        distance:"40px",
+        duration:900,
+        easing:"ease-in-out",
+        opacity:0,
+        interval:400,
+        reset:true,
+      })
+
+  </script>
   </body>
-</html>
+</html>   
