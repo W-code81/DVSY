@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DVSY - Design & Freedom</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="Assets/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">DVSY</div>
+
+      <nav>
+        <ul>
+          <li><a href="#" class="hideonMobile">Designers</a></li>
+          <li><a href="#" class="hideonMobile">Collabs</a></li>
+          <li><a href="#" class="hideonMobile">Events</a></li>
+          <li><a href="#" class="hideonMobile">Blog</a></li>
+          <li><a href="#" class="hideonMobile">Card</a></li>
+          <li><a href="#" class="btn hideonMobile"> Get in Touch</a></li>
+          <li class="menu-button" onclick="showSideBar()">
+            <a href="#"
+              ><i class="fas fa-bars" height="26px" width="26px"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SIDEBAR -->
+    <header class="sidebar">
+      <nav>
+        <ul>
+          <li onclick="closeSideBar()">
+            <a href="#" class="active"
+              ><i class="fas fa-times" height="26px" width="26px"></i
+            ></a>
+          </li>
+          <li><a href="#">Designers</a></li>
+          <li><a href="#">Collabs</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Card</a></li>
+          <li><a href="#">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img
+        src="Assets/img/0e216779c8f7408e7dddb015fd174785.jpg"
+        alt="Fashion Hero"
+        draggable="false"
+      />
+
+      <div class="hero-text">
+        <h1>DESIGN & FREEDOM</h1>
+        <p>
+          Explore Independent Style by Embracing Uniqueness with our Exclusive
+          Designer Aparrel
+        </p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="cards">
+        <h3>INDEPENDENCY</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+      </div>
+
+      <div class="cards">
+        <h3>UNIQUITY</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+      </div>
+
+      <div class="cards">
+        <h3>QUALITY</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+      </div>
+
+      <div class="cards">
+        <h3>SUSTAINABILITY</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div>
+        <h2>150+</h2>
+        <p>Designers</p>
+      </div>
+
+      <div>
+        <h2>500+</h2>
+        <p>Clients</p>
+      </div>
+
+      <div>
+        <h2>20k+</h2>
+        <p>Masterpiece</p>
+      </div>
+
+      <div>
+        <h2>50+</h2>
+        <p>Events</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about-left">
+        <h2>Where Fashion Meets Freedom</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non odit,
+          doloremque a cumque eaque aspernatur minima quia ipsam impedit
+          laboriosam, neque sint rerum repellat dolore culpa, in quos facilis
+          esse!
+        </p>
+      </div>
+
+      <div class="about-right">
+        <img
+          src="Assets/img/10-victor-kunde-main-book-maroe-management.jpg"
+          alt="About Fashion"
+          draggable="false"
+        />
+      </div>
+    </section>
+
+    <section class="advantages">
+      <h2>Our Advantages</h2>
+
+      <div class="adv-grid">
+        
+        <div class="adv-cards span-two-rolls">hello</div>
+        <!-- <div class="adv-cards"></div> -->
+
+        <div class="adv-cards">
+          <h3>Idependent Designers</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iure
+            illo cupiditate, inventore dicta adipisci, explicabo molestias
+            accusamus nam deserunt illum reprehenderit. Consequatur omnis quos,
+            asperiores repudiandae aliquid nemo cum.
+          </p>
+        </div>
+        <div class="adv-cards">
+          <h3>Elxusive & Uniquity</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            praesentium quo voluptatum quos impedit ipsum iure cum! Quam sint
+            perspiciatis nisi quidem in excepturi debitis laudantium velit,
+            neque, vitae eligendi!
+          </p>
+        </div>
+        <div class="adv-cards">
+          <h3>High Quality</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+            deleniti possimus aliquid vitae mollitia quidem blanditiis dolorum
+            itaque nam omnis, doloribus eligendi nemo cupiditate quam
+            repudiandae ipsam. Iusto, modi dolorem!
+          </p>
+        </div>
+        <div class="adv-cards">
+          <h3>Eco-Friendly</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, culpa
+            provident. Culpa, fugit velit architecto aliquid ad porro enim
+            officiis sint doloribus voluptas nostrum, voluptatibus, iusto
+            similique soluta itaque odit?
+          </p>
+        </div>
+
+       
+
+
+      </div>
+    </section>
+    
+    <!-- Scroll Reveal CDN -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+      function closeSideBar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+
+      function showSideBar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+    </script>
+  </body>
+</html>
