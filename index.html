@@ -205,16 +205,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script>
-      function closeSideBar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "none";
-      }
-
-      function showSideBar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "flex";
-      }
-
       // const scrollBtn = document.createElement("button");
       // scrollBtn.innerHTML = "↑";
       // scrollBtn.style.position = "fixed";
@@ -242,16 +232,16 @@
       // });
 
       // for the sidebar
-      function showSideBar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "flex";
-      }
-
-      function closeSideBar() {
+     function closeSideBar() {
         const sidebar = document.querySelector(".sidebar");
         sidebar.style.display = "none";
       }
 
+      function showSideBar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      
       // Scroll Reveal
       ScrollReveal().reveal(".hero-text h1", {
         origin: "bottom",
