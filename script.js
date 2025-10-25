@@ -149,36 +149,61 @@ ScrollReveal().reveal(".padding", {
 // });
 
 // Newsletter submission interactivity
- const form = document.getElementById("newsletterForm");
+const form = document.getElementById("newsletterForm");
+const message = document.getElementById("form-message");
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
+form.addEventListener("submit", async (e) => {
+  // prevents browsers default behaviour ie to reload the page after submitting a form
+  e.preventDefault();
 
-    const input = form.querySelector("input[type='email']");
-    const email = input.value.trim();
+  // fetches the text the user typed
+  const input = form.querySelector("input[type='email']");
+  const email = input.value.trim();
 
-    if (!email) return alert("Please enter a valid email.");
+  if (!email) return showMessage("Please enter a valid email.", "error");
 
-    // Send to Formspree
-    try {
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
+  // Send to Formspree
+  try {
+    // fetch is an in-built browser function to send HTTP requests & "from.action"-the fromspree link
+    const response = await fetch(form.action, {
+      method: form.method, // post
+      body: new FormData(form), // gathers and sends all <input> fields
+      headers: { Accept: "application/json" },
+    });
 
-      if (response.ok) {
-        alert(`🎉 Thank you for subscribing, ${email}!`);
-        input.value = ""; // clear the input
-        console.log("Submitted email:", email);
-      } else {
-        alert("⚠️ Oops! Something went wrong. Please try again.");
-      }
-    } catch (err) {
-      console.error(err);
-      alert("Network error. Please check your connection.");
+    // response.ok - data successfully reaches formspree
+    if (response.ok) {
+      showMessage(`🎉 Thank you for subscribing, ${email}!`, "success");
+      input.value = ""; // clear the input
+      console.log("Submitted email:", email); // for debugging
+    } 
+    
+    else {
+      showMessage("⚠️ Oops! Something went wrong. Please try again.", "error");
     }
-  });
+
+    //incase data failed to send..
+  }
+  
+  catch (err) {
+    console.error(err);
+    showMessage("Network error. Please check your connection.", "error");
+  }
+});
+
+function showMessage(text, type) {
+  message.textContent = text;
+  message.className = ""; // reset classes
+  message.classList.add(type);
+
+  setTimeout(() => {
+    message.classList.remove("hidden");
+  }, 50);
+
+  setTimeout(() => {
+    message.classList.add("hidden");
+  }, 4000); // hides message after 4 seconds
+}
 
 // Scroll Reveal for new sections
 ScrollReveal().reveal(".testimonials h2, .newsletter h2, .footer", {

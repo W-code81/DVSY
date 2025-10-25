@@ -328,6 +328,32 @@ a:hover {
   background: #c0033c;
 }
 
+#form-message{
+  margin: 1rem;
+  font-size: 1rem;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#form-message.hidden{
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+}
+
+#form-message.success{
+  color: #4caf50; 
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+#form-message.error{
+  color: #f04;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
 /* Footer */
 .footer {
   background: #000;
@@ -356,7 +382,8 @@ a:hover {
   transition: 0.3s;
 }
 
-.footer-links a:hover {
+.footer-links a:hover ,
+.footer-socials a:hover {
   color: #f04;
 }
 
@@ -367,9 +394,9 @@ a:hover {
   font-size: 1.2rem;
 }
 
-.footer-socials a:hover {
+/* .footer-socials a:hover {
   color: #f04;
-}
+} */
 
 .footer p {
   font-size: 0.9rem;
