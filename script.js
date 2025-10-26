@@ -76,7 +76,7 @@ ScrollReveal().reveal(".about-left", {
 
 ScrollReveal().reveal(".about-right", {
   origin: "right",
-  distance: "40px",
+  distance: "15px",
   duration: 800,
   easing: "ease-in-out",
   opacity: 0,
