@@ -1,11 +1,11 @@
-**DVSY — Modern Fashion Landing Page (In Progress)**
+##**DVSY — Modern Fashion Landing Page (In Progress)**
 
 DVSY is a sleek, minimalistic, and youth-focused fashion landing page designed to showcase urban-inspired clothing, promote brand identity, and offer a smooth user experience across all devices.  
 This project is part of my growing front-end development portfolio and is currently **in active development**.
 
-**🚀 Features (In Progress)**
+##**🚀 Features (In Progress)**
 
-**✅ Implemented**
+##**✅ Implemented**
 - **Responsive Hero Section**  
   Clean layout with large imagery and bold typography. Fully responsive across mobile, tablet, and desktop.
 
@@ -19,7 +19,7 @@ This project is part of my growing front-end development portfolio and is curren
   Designed with simplicity and visual hierarchy in mind.
 
 
-**🔧 Upcoming Features** 
+##**🔧 Upcoming Features** 
 **linked pages for all links**
 
 - **About Section**  
@@ -53,7 +53,7 @@ DVSY/
 └── README.md
 
 
-🎨 Design Goals
+##🎨 Design Goals
 
 Youth-centric, modern, bold visual direction
 
@@ -69,7 +69,7 @@ Mobile-first responsiveness
 
 ---
 
-📌 Current Challenges (Being Resolved)
+##📌 Current Challenges (Being Resolved)
 
 Removing horizontal overflow caused by ScrollReveal animations
 
@@ -83,7 +83,7 @@ Ensuring consistent typography across breakpoints
 
 ---
 
-📅 Project Status
+##📅 Project Status
 
 Status: In Progress 🛠️
 Next Milestone: Turning DVSY into a dynamic web app
@@ -92,7 +92,7 @@ Version: 0.2.0 (Unreleased)
 
 ---
 
-🧠 Lessons Learned (So Far)
+##🧠 Lessons Learned (So Far)
 
 Debugging layout overflow issues
 
@@ -106,7 +106,7 @@ Structuring sections cleanly for responsiveness
 
 ---
 
-🤝 Contributions
+##🤝 Contributions
 
 This is a personal portfolio project, so contributions are not open yet.
 However, ideas and design suggestions are welcome.
