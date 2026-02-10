@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - DVSY</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="Assets/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">DVSY</div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html" class="hideonMobile">Home</a></li>
+          <li><a href="designers.html" class="hideonMobile">Designers</a></li>
+          <li><a href="collabs.html" class="hideonMobile">Collabs</a></li>
+          <li><a href="events.html" class="hideonMobile">Events</a></li>
+          <li><a href="blog.html" class="hideonMobile">Blog</a></li>
+          <li><a href="contact.html" class="btn hideonMobile"> Get in Touch</a></li>
+          <li class="menu-button" onclick="showSideBar()">
+            <a href="#"
+              ><i class="fas fa-bars" height="26px" width="26px"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SIDEBAR -->
+    <header class="sidebar">
+      <nav>
+        <ul>
+          <li onclick="closeSideBar()">
+            <a href="#" class="active"
+              ><i class="fas fa-times" height="26px" width="26px"></i
+            ></a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="designers.html">Designers</a></li>
+          <li><a href="collabs.html">Collabs</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img
+        src="Assets/img/10-victor-kunde-main-book-maroe-management.jpg"
+        alt="Blog Hero"
+        draggable="false"
+        loading="lazy"
+      />
+
+      <div class="hero-text">
+        <h1>DVSY Blog</h1>
+        <p>Stories, insights, and perspectives from the fashion world</p>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+      <div class="blog-container">
+        <!-- Main Featured Post -->
+        <article class="featured-post">
+          <img src="Assets/img/0e216779c8f7408e7dddb015fd174785.jpg" alt="Featured Post" loading="lazy" />
+          <div class="featured-content">
+            <span class="post-category">Sustainability</span>
+            <h2>The Future of Sustainable Fashion: Innovation Meets Responsibility</h2>
+            <p class="post-meta">By Zoe Chen | March 8, 2025 | 8 min read</p>
+            <p class="post-excerpt">Explore how DVSY is leading the charge in sustainable fashion. From innovative materials to ethical production, discover the technologies and practices shaping the future of fashion.</p>
+            <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Posts Grid -->
+        <div class="posts-grid">
+          <article class="post-card">
+            <img src="Assets/img/13-victor-kunde-main-book-maroe-management.jpg" alt="Post 1" loading="lazy" />
+            <div class="post-content">
+              <span class="post-category">Design</span>
+              <h3>Maximalist Design: Embracing Bold Expression</h3>
+              <p class="post-meta">By Amara Johnson | March 5, 2025 | 6 min read</p>
+              <p class="post-excerpt">Breaking free from minimalism, we explore how maximalist design is redefining contemporary fashion with vibrant colors and layered textures.</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <img src="Assets/img/10-victor-kunde-main-book-maroe-management.jpg" alt="Post 2" loading="lazy" />
+            <div class="post-content">
+              <span class="post-category">Culture</span>
+              <h3>Street Style Revolution: From Sidewalk to Runway</h3>
+              <p class="post-meta">By Malik Hassan | February 28, 2025 | 7 min read</p>
+              <p class="post-excerpt">Streetwear has become a cultural phenomenon. Discover how urban aesthetics are influencing high fashion and creating new design standards.</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <img src="Assets/img/13-victor-kunde-main-book-maroe-management.jpg" alt="Post 3" loading="lazy" />
+            <div class="post-content">
+              <span class="post-category">Technology</span>
+              <h3>Smart Fabrics: The Next Frontier in Fashion Tech</h3>
+              <p class="post-meta">By Sofia Rodriguez | February 20, 2025 | 9 min read</p>
+              <p class="post-excerpt">Wearable technology is evolving rapidly. Learn about the innovations in smart textiles that are transforming how we think about clothing.</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <img src="Assets/img/10-victor-kunde-main-book-maroe-management.jpg" alt="Post 4" loading="lazy" />
+            <div class="post-content">
+              <span class="post-category">Artisan Craft</span>
+              <h3>Preserving Tradition: Heritage Techniques in Modern Design</h3>
+              <p class="post-meta">By James Okafor | February 15, 2025 | 7 min read</p>
+              <p class="post-excerpt">Traditional craftsmanship meets contemporary creativity. Explore how artisanal techniques are being revived and reimagined in today's fashion landscape.</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <img src="Assets/img/13-victor-kunde-main-book-maroe-management.jpg" alt="Post 5" loading="lazy" />
+            <div class="post-content">
+              <span class="post-category">Trends</span>
+              <h3>Color Forecast: Spring 2025 Palette Analysis</h3>
+              <p class="post-meta">By Luna Kim | February 10, 2025 | 5 min read</p>
+              <p class="post-excerpt">Dive into the color trends dominating Spring 2025. From pastels to bold brights, discover which hues will define the season.</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <img src="Assets/img/10-victor-kunde-main-book-maroe-management.jpg" alt="Post 6" loading="lazy" />
+            <div class="post-content">
+              <span class="post-category">Business</span>
+              <h3>Supporting Independent Designers: A Business Model for Change</h3>
+              <p class="post-meta">By DVSY Team | February 5, 2025 | 10 min read</p>
+              <p class="post-excerpt">How DVSY is empowering independent designers and creating sustainable economic opportunities in the fashion industry.</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="blog-sidebar">
+        <div class="sidebar-widget">
+          <h3>Popular Posts</h3>
+          <ul>
+            <li><a href="#">The Future of Sustainable Fashion</a></li>
+            <li><a href="#">Maximalist Design Trends</a></li>
+            <li><a href="#">Street Style Revolution</a></li>
+            <li><a href="#">Smart Fabrics Technology</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>Categories</h3>
+          <div class="categories">
+            <a href="#">Sustainability</a>
+            <a href="#">Design</a>
+            <a href="#">Culture</a>
+            <a href="#">Technology</a>
+            <a href="#">Artisan Craft</a>
+            <a href="#">Trends</a>
+            <a href="#">Business</a>
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>Newsletter</h3>
+          <p>Get the latest articles delivered to your inbox</p>
+          <form id="blogNewsletterForm" action="https://formspree.io/f/mwprgzqj" method="post">
+            <input type="email" placeholder="Your email" name="email" required />
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">DVSY</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Privacy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-dribbble"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <p class="copyright">© 2025 DVSY. Designed with Freedom.</p>
+    </footer>
+
+    <!-- Scroll Reveal CDN -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

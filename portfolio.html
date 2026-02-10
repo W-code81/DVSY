@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - DVSY</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="Assets/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">DVSY</div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html" class="hideonMobile">Home</a></li>
+          <li><a href="designers.html" class="hideonMobile">Designers</a></li>
+          <li><a href="collabs.html" class="hideonMobile">Collabs</a></li>
+          <li><a href="events.html" class="hideonMobile">Events</a></li>
+          <li><a href="blog.html" class="hideonMobile">Blog</a></li>
+          <li><a href="contact.html" class="btn hideonMobile"> Get in Touch</a></li>
+          <li class="menu-button" onclick="showSideBar()">
+            <a href="#"
+              ><i class="fas fa-bars" height="26px" width="26px"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SIDEBAR -->
+    <header class="sidebar">
+      <nav>
+        <ul>
+          <li onclick="closeSideBar()">
+            <a href="#" class="active"
+              ><i class="fas fa-times" height="26px" width="26px"></i
+            ></a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="designers.html">Designers</a></li>
+          <li><a href="collabs.html">Collabs</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img
+        src="Assets/img/13-victor-kunde-main-book-maroe-management.jpg"
+        alt="Portfolio Hero"
+        draggable="false"
+        loading="lazy"
+      />
+
+      <div class="hero-text">
+        <h1>Portfolio</h1>
+        <p>Curated Collections & Masterpieces</p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+      <!-- Filter Buttons -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ready-to-wear">Ready-to-Wear</button>
+        <button class="filter-btn" data-filter="couture">Couture</button>
+        <button class="filter-btn" data-filter="streetwear">Streetwear</button>
+        <button class="filter-btn" data-filter="experimental">Experimental</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-category="ready-to-wear">
+          <img src="Assets/img/0e216779c8f7408e7dddb015fd174785.jpg" alt="Collection 1" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h3>Urban Elegance</h3>
+            <p>Spring 2025 Collection</p>
+            <a href="#" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="couture">
+          <img src="Assets/img/10-victor-kunde-main-book-maroe-management.jpg" alt="Collection 2" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h3>Luxe Heritage</h3>
+            <p>Limited Edition Couture</p>
+            <a href="#" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="streetwear">
+          <img src="Assets/img/13-victor-kunde-main-book-maroe-management.jpg" alt="Collection 3" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h3>Street Vibes</h3>
+            <p>Urban Collection 2025</p>
+            <a href="#" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="experimental">
+          <img src="Assets/img/10-victor-kunde-main-book-maroe-management.jpg" alt="Collection 4" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h3>Abstract Forms</h3>
+            <p>Experimental Series</p>
+            <a href="#" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="ready-to-wear">
+          <img src="Assets/img/13-victor-kunde-main-book-maroe-management.jpg" alt="Collection 5" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h3>Everyday Luxury</h3>
+            <p>Casual Elegance Line</p>
+            <a href="#" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="couture">
+          <img src="Assets/img/0e216779c8f7408e7dddb015fd174785.jpg" alt="Collection 6" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h3>Evening Splendor</h3>
+            <p>Gala Collection</p>
+            <a href="#" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="streetwear">
+          <img src="Assets/img/10-victor-kunde-main-book-maroe-management.jpg" alt="Collection 7" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h3>Raw Energy</h3>
+            <p>Underground Series</p>
+            <a href="#" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="experimental">
+          <img src="Assets/img/13-victor-kunde-main-book-maroe-management.jpg" alt="Collection 8" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h3>Future Vision</h3>
+            <p>Tech-Inspired Design</p>
+            <a href="#" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="ready-to-wear">
+          <img src="Assets/img/0e216779c8f7408e7dddb015fd174785.jpg" alt="Collection 9" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h3>Minimalist Essence</h3>
+            <p>Essential Capsule</p>
+            <a href="#" class="view-btn">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+      <h2>Featured Projects</h2>
+      
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="Assets/img/10-victor-kunde-main-book-maroe-management.jpg" alt="Project 1" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Collaboration</span>
+            <h3>DVSY x EcoTech Spring Series</h3>
+            <p>A groundbreaking collaboration showcasing sustainable innovation in fashion. This collection features cutting-edge eco-friendly materials combined with avant-garde design.</p>
+            <a href="#" class="read-more">Explore Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="Assets/img/13-victor-kunde-main-book-maroe-management.jpg" alt="Project 2" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Heritage</span>
+            <h3>Artisan Heritage Collection</h3>
+            <p>Celebrating traditional craftsmanship from artisans around the world. Each piece tells a story of cultural heritage and meticulous hand-craftsmanship.</p>
+            <a href="#" class="read-more">Explore Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="Assets/img/0e216779c8f7408e7dddb015fd174785.jpg" alt="Project 3" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Innovation</span>
+            <h3>Digital Fashion Initiative</h3>
+            <p>Exploring the intersection of fashion and digital innovation. From virtual garments to NFT wearables, this project pushes creative boundaries.</p>
+            <a href="#" class="read-more">Explore Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" style="background: #111; margin: 50px 0;">
+      <div>
+        <h2 class="count" data-target="150">0</h2>
+        <p>Collections</p>
+      </div>
+
+      <div>
+        <h2 class="count" data-target="20000">0</h2>
+        <p>Pieces Created</p>
+      </div>
+
+      <div>
+        <h2 class="count" data-target="500">0</h2>
+        <p>Designers</p>
+      </div>
+
+      <div>
+        <h2 class="count" data-target="25000">0</h2>
+        <p>Satisfied Customers</p>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <h2>Interested in Our Collections?</h2>
+      <p>Explore our latest designs and limited edition pieces</p>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">DVSY</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Privacy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-dribbble"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <p class="copyright">© 2025 DVSY. Designed with Freedom.</p>
+    </footer>
+
+    <!-- Scroll Reveal CDN -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    <script>
+      // Portfolio filter functionality
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          portfolioItems.forEach(item => {
+            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

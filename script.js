@@ -113,40 +113,40 @@ ScrollReveal().reveal(".padding", {
   reset: true,
 });
 
-// function animateCountUp(element, target, duration = 2000) {
-//   let start = 0;
-//   let startTime = null;
-//   target = +target;
-//   function update(timestamp) {
-//     if (!startTime) startTime = timestamp;
-//     const progress = Math.min((timestamp - startTime) / duration, 1);
-//     element.textContent = Math.floor(progress * target);
-//     if (progress < 1) {
-//       requestAnimationFrame(update);
-//     } else {
-//       element.textContent = target + "+"; // Add "+" if you want
-//     }
-//   }
-//   requestAnimationFrame(update);
-// }
+function animateCountUp(element, target, duration = 2000) {
+  let start = 0;
+  let startTime = null;
+  target = +target;
+  function update(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const progress = Math.min((timestamp - startTime) / duration, 1);
+    element.textContent = Math.floor(progress * target);
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    } else {
+      element.textContent = target + "+"; // Add "+" if you want
+    }
+  }
+  requestAnimationFrame(update);
+}
 
-// // Trigger count up when stats section is revealed
-// ScrollReveal().reveal('.stats > div', {
-//   origin: 'bottom',
-//   distance: '40px',
-//   duration: 900,
-//   easing: 'ease-in-out',
-//   opacity: 0,
-//   interval: 200,
-//   reset: true,
-//   afterReveal: function(el) {
-//     const countEl = el.querySelector('.count');
-//     if (countEl && !countEl.dataset.animated) {
-//       animateCountUp(countEl, countEl.dataset.target);
-//       countEl.dataset.animated = "true";
-//     }
-//   }
-// });
+// Trigger count up when stats section is revealed
+ScrollReveal().reveal('.stats > div', {
+  origin: 'bottom',
+  distance: '40px',
+  duration: 900,
+  easing: 'ease-in-out',
+  opacity: 0,
+  interval: 200,
+  reset: true,
+  afterReveal: function(el) {
+    const countEl = el.querySelector('.count');
+    if (countEl && !countEl.dataset.animated) {
+      animateCountUp(countEl, countEl.dataset.target);
+      countEl.dataset.animated = "true";
+    }
+  }
+});
 
 // Newsletter submission interactivity
 const form = document.getElementById("newsletterForm");

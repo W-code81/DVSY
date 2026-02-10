@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collaborations - DVSY</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="Assets/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">DVSY</div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html" class="hideonMobile">Home</a></li>
+          <li><a href="designers.html" class="hideonMobile">Designers</a></li>
+          <li><a href="collabs.html" class="hideonMobile">Collabs</a></li>
+          <li><a href="events.html" class="hideonMobile">Events</a></li>
+          <li><a href="blog.html" class="hideonMobile">Blog</a></li>
+          <li><a href="contact.html" class="btn hideonMobile"> Get in Touch</a></li>
+          <li class="menu-button" onclick="showSideBar()">
+            <a href="#"
+              ><i class="fas fa-bars" height="26px" width="26px"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SIDEBAR -->
+    <header class="sidebar">
+      <nav>
+        <ul>
+          <li onclick="closeSideBar()">
+            <a href="#" class="active"
+              ><i class="fas fa-times" height="26px" width="26px"></i
+            ></a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="designers.html">Designers</a></li>
+          <li><a href="collabs.html">Collabs</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img
+        src="Assets/img/13-victor-kunde-main-book-maroe-management.jpg"
+        alt="Collaborations Hero"
+        draggable="false"
+        loading="lazy"
+      />
+
+      <div class="hero-text">
+        <h1>Collaborations</h1>
+        <p>Exploring creative partnerships and unique collections</p>
+      </div>
+    </section>
+
+    <!-- Collabs Grid -->
+    <section class="collabs-section">
+      <h2>Featured Collaborations</h2>
+      
+      <div class="collabs-grid">
+        <div class="collab-card">
+          <div class="collab-image">
+            <img src="Assets/img/10-victor-kunde-main-book-maroe-management.jpg" alt="Collab 1" loading="lazy" />
+          </div>
+          <h3>DVSY x Silhouette Haus</h3>
+          <p class="collab-date">Spring/Summer 2025</p>
+          <p class="collab-description">An exclusive collection celebrating contemporary craftsmanship and avant-garde design. Limited edition pieces featuring innovative silhouettes and sustainable materials.</p>
+          <a href="#" class="collab-link">Explore Collection <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="collab-card">
+          <div class="collab-image">
+            <img src="Assets/img/13-victor-kunde-main-book-maroe-management.jpg" alt="Collab 2" loading="lazy" />
+          </div>
+          <h3>DVSY x Urban Collective</h3>
+          <p class="collab-date">Fall/Winter 2024</p>
+          <p class="collab-description">Blending streetwear aesthetics with luxury craftsmanship. This collaboration brings together raw urban energy with refined tailoring for the modern individual.</p>
+          <a href="#" class="collab-link">Explore Collection <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="collab-card">
+          <div class="collab-image">
+            <img src="Assets/img/10-victor-kunde-main-book-maroe-management.jpg" alt="Collab 3" loading="lazy" />
+          </div>
+          <h3>DVSY x EcoTech</h3>
+          <p class="collab-date">Year-Round</p>
+          <p class="collab-description">Leading the sustainable fashion movement with cutting-edge eco-friendly technologies. Every piece is designed with environmental consciousness and style in mind.</p>
+          <a href="#" class="collab-link">Explore Collection <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="collab-card">
+          <div class="collab-image">
+            <img src="Assets/img/13-victor-kunde-main-book-maroe-management.jpg" alt="Collab 4" loading="lazy" />
+          </div>
+          <h3>DVSY x Heritage Artisans</h3>
+          <p class="collab-date">Quarterly Releases</p>
+          <p class="collab-description">Preserving traditional craftsmanship through modern fashion. Celebrating artisans from around the world and their unique textile techniques.</p>
+          <a href="#" class="collab-link">Explore Collection <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="collab-card">
+          <div class="collab-image">
+            <img src="Assets/img/10-victor-kunde-main-book-maroe-management.jpg" alt="Collab 5" loading="lazy" />
+          </div>
+          <h3>DVSY x Tech Wearables</h3>
+          <p class="collab-date">Spring 2025</p>
+          <p class="collab-description">Fashion meets technology in this groundbreaking collaboration. Smart fabrics and innovative designs that seamlessly integrate technology into your wardrobe.</p>
+          <a href="#" class="collab-link">Explore Collection <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="collab-card">
+          <div class="collab-image">
+            <img src="Assets/img/13-victor-kunde-main-book-maroe-management.jpg" alt="Collab 6" loading="lazy" />
+          </div>
+          <h3>DVSY x Local Makers</h3>
+          <p class="collab-date">Monthly Drops</p>
+          <p class="collab-description">Supporting independent creators and local makers. Each month features a new collaboration highlighting emerging talent from diverse communities worldwide.</p>
+          <a href="#" class="collab-link">Explore Collection <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" style="background: #111; margin: 50px 0;">
+      <div>
+        <h2 class="count" data-target="25">0</h2>
+        <p>Active Collaborations</p>
+      </div>
+
+      <div>
+        <h2 class="count" data-target="1500">0</h2>
+        <p>Limited Edition Pieces</p>
+      </div>
+
+      <div>
+        <h2 class="count" data-target="80">0</h2>
+        <p>Global Partners</p>
+      </div>
+
+      <div>
+        <h2 class="count" data-target="5000">0</h2>
+        <p>Satisfied Collectors</p>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <h2>Interested in Collaborating?</h2>
+      <p>We're always looking for creative partners to bring unique visions to life.</p>
+      <a href="contact.html" class="btn">Propose a Collaboration</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">DVSY</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Privacy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-dribbble"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <p class="copyright">© 2025 DVSY. Designed with Freedom.</p>
+    </footer>
+
+    <!-- Scroll Reveal CDN -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
