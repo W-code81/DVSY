@@ -1552,8 +1552,38 @@ img, video {
   font-size: 1.1rem;
 }
 
-.cta-section .btn {
+/* .cta-section .btn {
   display: inline-block;
+} */
+
+.cta-section form{
+   display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cta-section input {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  outline: none;
+  width: 250px;
+}
+
+.cta-section button {
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.4rem;
+  background: #f04;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-section button:hover {
+  background: #c0033c;
 }
 
 /* Responsive Styles */
