@@ -43,7 +43,7 @@ body {
   transition: 0.3s;
 }
 
-.navbar a:hover {
+.navbar a:not(.btn):hover {
   color: #f04;
 }
 
@@ -100,8 +100,7 @@ body {
   display: none;
 }
 
-.active:hover,
-a:hover {
+.active:hover, .sidebar a:hover {
   color: #f04;
 }
 
